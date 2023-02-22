@@ -36,7 +36,7 @@
         - JavaScript 엔진이 embed 되어 있는 호스트 환경에 있는 객체
         - Browser가 호스트인 경우: screen, location, navigator, document(DOM), XmlHttpRequest
         - Node가 호스트인 경우: http, os, fs, path, process, ...
-3. 사용자 객체
+    3. 사용자 객체
         - JavaScript 엔진이 실행하면서 생성하는 객체
 */
 
