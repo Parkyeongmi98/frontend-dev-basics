@@ -35,5 +35,3 @@ console.log(a)
 
 // cons;
 // ole.log(a)
-
-
