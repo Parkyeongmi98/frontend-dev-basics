@@ -43,4 +43,3 @@ console.log(k);
 }
 // console.log(x);  -> not defined error
 // console.log(PI);  -> not defined error
-
