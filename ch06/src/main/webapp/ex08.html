@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.onload = function() {
+	setTimeout(function() {
+		var imgElement = document.createElement('img');
+		imgElement.src = 'https://i.pinimg.com/236x/71/8a/db/718adba572c92e7ec763f0848e30e881.jpg';
+		imgElement.style.width = '200px';
+		imgElement.alt = '루피만세~';
+		imgElement.title = '루피만세~';
+		imgElement['data-no'] = 
+		
+		document.body.appendChild(imgElement);
+	}, 2000);
+};
+
+</script>
 </head>
 <body>
 	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
