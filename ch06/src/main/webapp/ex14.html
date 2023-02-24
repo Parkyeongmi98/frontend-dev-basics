@@ -13,12 +13,11 @@
 window.addEventListener("load", function() {
 	document
 		.getElementById('form-login')
-		.onclick = function() {
+		.onsubmit = function() {
 			var inputEmail = document.getElementById('input-email');
 			if(inputEmail.value == '') {
 				alert('이메일을 입력해주세요');
 				inputEmail.focus();
-				console.log("......")
 				
 				return false;
 			}
@@ -27,7 +26,6 @@ window.addEventListener("load", function() {
 			if(inputPassword.value == '') {
 				alert('비밀번호를 입력해주세요');
 				inputPassword.focus();
-				console.log("......")
 				
 				return false;
 			}
