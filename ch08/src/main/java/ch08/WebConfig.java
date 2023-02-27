@@ -57,7 +57,7 @@ public class WebConfig implements WebMvcConfigurer {
 		MappingJackson2HttpMessageConverter messageConverter = new MappingJackson2HttpMessageConverter(builder.build());
 		messageConverter.setSupportedMediaTypes(
 			Arrays.asList(
-					new MediaType("text", "html", Charset.forName("utf-8"))
+					new MediaType("application", "json", Charset.forName("utf-8"))
 				)
 		);
 				
