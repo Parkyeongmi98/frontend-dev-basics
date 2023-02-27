@@ -6,6 +6,8 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$('li:contains("샘플")').css("color", "red"); // 내용중에 샘플이 들어있는 li
+		$('li:has(strong)').css("color", "blue"); // strong태그가 포함되어 있는 li
 	}, 1000);
 });
 </script>

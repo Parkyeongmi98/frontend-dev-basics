@@ -6,6 +6,10 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$("li[id]").css("color", "red");
+		$("li[id='third']").css("color", "blue");
+		$("li[class='fourth']").css("color", "green");
+		$("li[class!='second']").css("font-weight", "bold");
 	}, 1000);
 });
 </script>
