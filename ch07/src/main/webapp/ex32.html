@@ -6,6 +6,25 @@
 <script type="text/javascript">
 $(function() {
 	setTimeout(function(){
+		//$("h2 a").attr("href", "https://www.douzone.com"); // h2에 a태그 안 href에 링크주소 추가해주기
+		//$("h2 a").attr("target", "_blank"); // 새 창으로 열리기
+		//$("h2 a").attr("title", "우리회사 좋은회사~"); // 링크에 마우스 올리면 뜨는 설명
+		//$("h2 a").css("font-size", "0.75em");
+		
+		// 함수 체인
+		//$("h2 a")
+		//	.attr("href", "https://www.douzone.com") 
+		//	.attr("target", "_blank") 
+		//	.attr("title", "우리회사 좋은회사~") 
+		//	.css("font-size", "0.75em");
+		
+		$("h2 a")
+			.attr({
+				href: "https://www.douzone.com",
+				target: "_blank",
+				title: "우리회사 좋은회사~",	
+			})
+			.css("font-size", "0.75em");
 	}, 2000);
 });  
 </script>

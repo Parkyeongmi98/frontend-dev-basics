@@ -6,6 +6,8 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$('.d1').wrap("<h2>"); // class가 d1인 내용을 <h2>태그로 감싸기
+		$('.d2').wrap("<h3>").css("padding-left", "50px"); // class가 d2인 내용을 <h3>태그로 감싸고 padding값 주기(.d2인 em에 css추가됨)
 		
 	}, 1000);
 });
