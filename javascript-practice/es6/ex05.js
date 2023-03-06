@@ -43,3 +43,16 @@ console.log("\n--------\n");
     }
 });
 
+// ex05 - this를 어휘적으로 바인딩(Lexical Bind)
+console.log("\n--------\n");
+const dooly = {
+    name: '둘리',
+    friends: ['또치', '마이콜', '도우너', '길동'],
+    printFriends: function() {
+        //console.log(this);        
+        this.friends.forEach(f => console.log(`${this.name}의 친구 ${f}`));
+    }
+};
+
+dooly.printFriends();
+
