@@ -10,18 +10,22 @@ const myAsyncFn02 = function(param) {
                 reject(new Error("fail"))
             }
         }, 2000);
-    })
+    });
+};
+
+if(require.main == module) {
+    myAsyncFn02("data")
+        // test01: success
+        .then(function(result) {
+            console.log(result);
+        })
+        // test02: fail
+        .catch(function(error) {
+            console.log(error);
+        });
+
+    console.log("wait....");
+} else {
+    module.exports = myAsyncFn02;
 }
 
-
-myAsyncFn02("data")
-    // test01: success
-    .then(function(result) {
-        console.log(result);
-    })
-    // test02: fail
-    .catch(function(error) {
-        console.log(error);
-    });
-
-console.log("wait....");
